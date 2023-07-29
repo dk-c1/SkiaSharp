@@ -4,11 +4,11 @@ namespace SkiaSharp
 {
 	internal partial class SkiaApi
 	{
-#if __IOS__ || __TVOS__ || __WATCHOS__
-		private const string SKIA = "@rpath/libSkiaSharp.framework/libSkiaSharp";
-#else
+//#if __IOS__ || __TVOS__ || __WATCHOS__
+//		private const string SKIA = "@rpath/libSkiaSharp.framework/libSkiaSharp";
+//#else
 		private const string SKIA = "libSkiaSharp";
-#endif
+//#endif
 
 #if USE_DELEGATES
 		private static readonly Lazy<IntPtr> libSkiaSharpHandle =
